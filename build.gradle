@@ -4,7 +4,11 @@ plugins {
 
 group = 'com.iqs'
 version = '1.0.0'
-// sourceCompatibility = '17'
+
+java {
+	sourceCompatibility = '21'
+	targetCompatibility = '21'
+}
 
 repositories {
     mavenCentral()
@@ -14,7 +18,7 @@ repositories {
 }
 
 dependencies {
-	compileOnly 'net.portswigger.burp.extensions:montoya-api:2026.2'
+	compileOnly 'net.portswigger.burp.extensions:montoya-api:2026.4'
 	implementation 'com.google.code.gson:gson:2.14.0'
 }
 
